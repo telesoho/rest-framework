@@ -10,7 +10,7 @@
     "license": "LGPL-3",
     "author": "ACSONE SA/NV,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/rest-framework",
-    "depends": ["base_rest", "auth_api_key"],
+    "depends": ["base_rest"],
     "maintainers": ["lmignon"],
     "installable": True,
     "auto_install": True,
