@@ -25,8 +25,11 @@ class SessionAuthenticationService(Component):
     _usage = "auth"
     _collection = "session.rest.services"
 
-    @restapi.method([(["/login"], "POST")], auth="public")
-    def authenticate(self):
+
+    @restapi.method([(["/login"], "POST")], input_param=
+        restapi.CerberusValidator({"db": {"type": "string"}, "login": {"type": "string", "required": True}, "password": {"type": "string", "required": True}}), 
+        auth="public")
+    def authenticate(self, login, password, db=None):
         params = request.params
         db_name = params.get("db", db_monodb())
         request.session.authenticate(db_name, params["login"], params["password"])
