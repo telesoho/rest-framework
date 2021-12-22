@@ -49,7 +49,7 @@
             <script>
                  odoo.define('base_rest.swagger', function (require) {
                         var SwaggerUi = require('base_rest.swagger_ui');
-                        var swagger_ui = new SwaggerUi(<t t-esc="api_urls" />, '<t
+                        var swagger_ui = new SwaggerUi(<t t-raw="api_urls" />, '<t
                     t-esc="primary_name"
                 />');
                         $(function() {
