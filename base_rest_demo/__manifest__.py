@@ -5,15 +5,23 @@
     "name": "Base Rest Demo",
     "summary": """
         Demo addon for Base REST""",
-    "version": "15.0.1.0.0",
+    "version": "15.0.1.0.1",
     "development_status": "Beta",
     "license": "LGPL-3",
     "author": "ACSONE SA/NV, " "Odoo Community Association (OCA)",
     "maintainers": ["lmignon"],
     "website": "https://github.com/OCA/rest-framework",
-    "depends": ["base_rest", "base_rest_datamodel", "component"],
+    "depends": [
+        "base_rest",
+        "base_rest_datamodel",
+        "base_rest_pydantic",
+        "component",
+        "extendable",
+    ],
     "data": [],
     "demo": [],
-    "external_dependencies": {"python": ["jsondiff"]},
+    "external_dependencies": {
+        "python": ["jsondiff", "extendable-pydantic", "pydantic"]
+    },
     "installable": True,
 }

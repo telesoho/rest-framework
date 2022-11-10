@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 14.0\n"
+"Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,6 +18,17 @@ msgstr ""
 #: model:ir.cron,cron_name:rest_log.ir_cron_autovacuum_rest_log
 #: model:ir.cron,name:rest_log.ir_cron_autovacuum_rest_log
 msgid "Auto-vacuum REST Logs"
+msgstr ""
+
+#. module: rest_log
+#: model:ir.model.fields,field_description:rest_log.field_rest_log__collection
+#: model_terms:ir.ui.view,arch_db:rest_log.rest_log_search_view
+msgid "Collection"
+msgstr ""
+
+#. module: rest_log
+#: model:ir.model.fields,field_description:rest_log.field_rest_log__collection_id
+msgid "Collection ID"
 msgstr ""
 
 #. module: rest_log
@@ -199,6 +210,11 @@ msgstr ""
 #. module: rest_log
 #: model_terms:ir.ui.view,arch_db:rest_log.rest_log_search_view
 msgid "User"
+msgstr ""
+
+#. module: rest_log
+#: model_terms:ir.ui.view,arch_db:rest_log.rest_log_form_view
+msgid "View collection"
 msgstr ""
 
 #. module: rest_log
